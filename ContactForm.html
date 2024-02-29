@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactForm</title>
+    <link rel="stylesheet" href="style2.css" class="css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main_heading">Contact Us</h1>
+            <p>We'd love to get in touch and learn more about you. So, send us a message and we'll reply as fast as we can.</p>
+            <fieldset>
+                <p>Name : <input type="text" name="name1" placeholder="Enter your first name" required> <input type="text" name="name2" placeholder="Enter your second name" required></p>
+                <p>Email : <input type="email" name="mail" placeholder="Enter your E-mail address" required></p>
+                <p>Your Response : <textarea name="respone" id="response" cols="90" rows="10" placeholder="Enter your response" required></textarea></p>
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
